@@ -26,18 +26,22 @@ a {// cursor: pointer; }
 
 /*** COLORS ***/ 
 { color: #340853; }
+
+.dear-title-span { color: #AAA; }
 /*** END COLORS ***/
 
 /*** FONTS ***/
 @font-face{font-family:"Bauhaus";src:url("../../assets/fonts/BAUHS93.TTF");}
 @font-face{font-family:"Impact";src:url("../../assets/fonts/impact.TTF");}
 
-{ font-family: "Bauhaus"; }
+.dear-title-span { font-family: "Bauhaus"; }
 * { font-family: "Impact"; word-spacing: .25em; }
 
 .cta-text {// font-weight: bold; }
+.dear-message-p { text-align: center; }
 .footer-logo { text-align: right; }
-.cadets-name { text-transform: uppercase; }
+.cadets-name,
+.dear-title-span { text-transform: uppercase; }
 
 
 .cadets-rows-list-item:nth-child(5) .cadets-name,
@@ -45,10 +49,10 @@ a {// cursor: pointer; }
 .cadets-rows-list-item:nth-child(16) .cadets-name,
 .cadets-rows-list-item:nth-child(18) .cadets-name,
 .cadets-rows-list-item:nth-child(1) .cadets-name,
-.jekyll-placeholder-className {
+.jekyll-placeholder-className,
+.dear-message-p {
     color: #340853;
     background-image: url("../../assets/images/purple-background.png");
-//    background-size: cover;
     background-position: fixed;
     background-clip: text;
         -webkit-background-clip: text;
@@ -60,6 +64,7 @@ a {// cursor: pointer; }
         -o-background-fill-color: transparent;
     color: transparent;
 }
+    .dear-message-p { background-size: cover; }
 /*** END FONTS ***/
 
 /*** MEDIA ***/
@@ -70,12 +75,13 @@ a {// cursor: pointer; }
 
 /*** COMPONENTS ***/
     /*** COMMONS ***/
-    main { display: flex; }
-    main { flex-direction: column; }
-    main { justify-content: flex-end; }
+    .section2 { display: flex; }
+    .section2 { flex-direction: column; }
+    .section2 { justify-content: flex-end; }
     .cta { flex: 1; }
 
-    main { position: relative; }
+    .section2 { width: 100%; height: 100%; }
+    .section2 { position: relative; }
 
     /*** .cadets ***/
     .cadets-rows-list { display: flex; }
@@ -84,6 +90,7 @@ a {// cursor: pointer; }
     .cadets,
     .cadets-rows,
     .cadets-rows-list { width: 100%; height: 100%; }
+    .section1 { width: 100%; height: auto; }
 
     .cadets {
         position: absolute; top: 0; left: 0;
@@ -128,6 +135,19 @@ a {// cursor: pointer; }
         position: relative; top: 1em; left: 1em;
     }
 
+    /*** .dear ***/
+    .dear {
+        position: relative;
+        padding: 1.9em 0;
+    }
+    .dear-title {
+        overflow: hidden;
+    }
+    .dear-message {
+        position: absolute; top: 0; left: 0;
+        width: 100%; height: 100%;
+    }
+
     /*** .footer ***/
     .footer-logo {
         padding: 1em;
@@ -146,6 +166,8 @@ a {// cursor: pointer; }
     body, html, main { font-size: 16px; }
     .cadets-name { font-size: .9em; }
     .cta-text { font-size: 1.9em; }
+    .dear-message-p { font-size: 1.9em; }
+    .dear-title-span { font-size: 7em; }
 
     .footer-logo-img { height: 1.9em; }
 }
