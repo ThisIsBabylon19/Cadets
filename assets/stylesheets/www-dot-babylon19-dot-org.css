@@ -175,6 +175,8 @@ a {// cursor: pointer; }
     body, html, main { font-size: 18px; }
     .cadets-name { font-size: 1.1em; }
     .cta-text { font-size: 2.5em; }
+    .dear-message-p { font-size: 3em; }
+    .dear-title-span { font-size: 10em; }
 
     .cadets-rows-list { width: 90%; }
 
